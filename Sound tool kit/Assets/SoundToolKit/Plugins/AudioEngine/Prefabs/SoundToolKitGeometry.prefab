@@ -43,4 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79a1a7a004890da418e39fab6d7ee1fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_meshClusters: []
+  m_meshClusters:
+  - {fileID: 11400000, guid: 06723e150c9597d4bbb69f1649e7171c, type: 2}
+  - {fileID: 0}
+  m_previousClusters: []

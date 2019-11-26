@@ -223,6 +223,7 @@ GameObject:
   - component: {fileID: 784536966}
   - component: {fileID: 784536965}
   - component: {fileID: 784536964}
+  - component: {fileID: 784536968}
   m_Layer: 0
   m_Name: Plane (1)
   m_TagString: Untagged
@@ -304,6 +305,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!114 &784536968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784536963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 955940341c029ca4ba7a0e96fddf897d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_acousticMaterial: {fileID: 11400000, guid: 3cdbce16ba8b9504393910ea76c24c48, type: 2}
+  m_enabledAsAcousticObstacle: 1
+  m_meshCluster: {fileID: 0}
+  m_previousCluster: {fileID: 0}
 --- !u!1001 &884591472
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -321,7 +338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.504422e-17
+      value: 1.48
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: m_LocalPosition.z
@@ -446,7 +463,12 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_soundToolKitPlaybacks: []
+  m_soundToolKitPlaybacks:
+  - m_sample: {fileID: 11400000, guid: 1b66df3a17ab024449fd30d6209ddb2b, type: 2}
+    m_volume: 1
+    m_looped: 1
+    m_autoPlay: 1
+    m_awakened: 1
 --- !u!4 &892369207
 Transform:
   m_ObjectHideFlags: 0
@@ -473,6 +495,7 @@ GameObject:
   - component: {fileID: 961494788}
   - component: {fileID: 961494787}
   - component: {fileID: 961494786}
+  - component: {fileID: 961494790}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -554,6 +577,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &961494790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961494785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 955940341c029ca4ba7a0e96fddf897d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_acousticMaterial: {fileID: 11400000, guid: 3cdbce16ba8b9504393910ea76c24c48, type: 2}
+  m_enabledAsAcousticObstacle: 1
+  m_meshCluster: {fileID: 0}
+  m_previousCluster: {fileID: 0}
 --- !u!1 &1029752158
 GameObject:
   m_ObjectHideFlags: 0
@@ -566,6 +605,7 @@ GameObject:
   - component: {fileID: 1029752161}
   - component: {fileID: 1029752160}
   - component: {fileID: 1029752159}
+  - component: {fileID: 1029752163}
   m_Layer: 0
   m_Name: Plane (3)
   m_TagString: Untagged
@@ -647,6 +687,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!114 &1029752163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029752158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 955940341c029ca4ba7a0e96fddf897d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_acousticMaterial: {fileID: 11400000, guid: 3cdbce16ba8b9504393910ea76c24c48, type: 2}
+  m_enabledAsAcousticObstacle: 1
+  m_meshCluster: {fileID: 0}
+  m_previousCluster: {fileID: 0}
 --- !u!1 &1165888494
 GameObject:
   m_ObjectHideFlags: 0
@@ -659,6 +715,7 @@ GameObject:
   - component: {fileID: 1165888497}
   - component: {fileID: 1165888496}
   - component: {fileID: 1165888495}
+  - component: {fileID: 1165888499}
   m_Layer: 0
   m_Name: Plane (4)
   m_TagString: Untagged
@@ -740,6 +797,91 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &1165888499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165888494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 955940341c029ca4ba7a0e96fddf897d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_acousticMaterial: {fileID: 11400000, guid: 3cdbce16ba8b9504393910ea76c24c48, type: 2}
+  m_enabledAsAcousticObstacle: 1
+  m_meshCluster: {fileID: 0}
+  m_previousCluster: {fileID: 0}
+--- !u!1001 &1625132398
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1582950313952326936, guid: 481e6ffba868cbf4fbe1d79e69a52336,
+        type: 3}
+      propertyPath: m_Name
+      value: SoundToolKitGeometry
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582950313952326937, guid: 481e6ffba868cbf4fbe1d79e69a52336,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582950313952326937, guid: 481e6ffba868cbf4fbe1d79e69a52336,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582950313952326937, guid: 481e6ffba868cbf4fbe1d79e69a52336,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582950313952326937, guid: 481e6ffba868cbf4fbe1d79e69a52336,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582950313952326937, guid: 481e6ffba868cbf4fbe1d79e69a52336,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582950313952326937, guid: 481e6ffba868cbf4fbe1d79e69a52336,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582950313952326937, guid: 481e6ffba868cbf4fbe1d79e69a52336,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582950313952326937, guid: 481e6ffba868cbf4fbe1d79e69a52336,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582950313952326937, guid: 481e6ffba868cbf4fbe1d79e69a52336,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582950313952326937, guid: 481e6ffba868cbf4fbe1d79e69a52336,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582950313952326937, guid: 481e6ffba868cbf4fbe1d79e69a52336,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 481e6ffba868cbf4fbe1d79e69a52336, type: 3}
 --- !u!1 &1859610492
 GameObject:
   m_ObjectHideFlags: 0
@@ -752,6 +894,7 @@ GameObject:
   - component: {fileID: 1859610495}
   - component: {fileID: 1859610494}
   - component: {fileID: 1859610493}
+  - component: {fileID: 1859610497}
   m_Layer: 0
   m_Name: Plane (2)
   m_TagString: Untagged
@@ -833,89 +976,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!1 &1878551334
-GameObject:
+--- !u!114 &1859610497
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1878551337}
-  - component: {fileID: 1878551336}
-  - component: {fileID: 1878551335}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!81 &1878551335
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1878551334}
+  m_GameObject: {fileID: 1859610492}
   m_Enabled: 1
---- !u!20 &1878551336
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1878551334}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &1878551337
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1878551334}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 955940341c029ca4ba7a0e96fddf897d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_acousticMaterial: {fileID: 11400000, guid: 3cdbce16ba8b9504393910ea76c24c48, type: 2}
+  m_enabledAsAcousticObstacle: 1
+  m_meshCluster: {fileID: 0}
+  m_previousCluster: {fileID: 0}
 --- !u!1 &1987787052
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,6 +1004,7 @@ GameObject:
   - component: {fileID: 1987787055}
   - component: {fileID: 1987787054}
   - component: {fileID: 1987787053}
+  - component: {fileID: 1987787057}
   m_Layer: 0
   m_Name: Plane (5)
   m_TagString: Untagged
@@ -1009,3 +1086,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1987787057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987787052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 955940341c029ca4ba7a0e96fddf897d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_acousticMaterial: {fileID: 11400000, guid: 3cdbce16ba8b9504393910ea76c24c48, type: 2}
+  m_enabledAsAcousticObstacle: 1
+  m_meshCluster: {fileID: 0}
+  m_previousCluster: {fileID: 0}
